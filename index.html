@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Omizu Hinakiのコンパクトなポートフォリオ。スキル・作品・お問い合わせを最小構成で掲載。">
+    <title>Omizu Hinaki | コンパクト・ポートフォリオ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="Hinaki.png" type="image/png" sizes="32x32">
+    <link rel="apple-touch-icon" href="Hinaki.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../portfolio/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header-main fixed top-0 left-0 right-0 z-50 transition-all duration-300" style="background: rgba(255,255,255,0.95); backdrop-filter: blur(10px); opacity: 0.4;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.4'">
+        <nav class="container mx-auto px-4 h-20 flex items-center justify-between">
+            <a href="index.html" class="text-2xl font-display font-bold" style="color: #C5A572;">Omizu Hinaki</a>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="index.html" class="nav-link-elegant">Home</a>
+                <a href="works.html" class="nav-link-elegant">Works</a>
+                <a href="index.html#contact" class="nav-link-elegant">Contact</a>
+            </div>
+            <div class="md:hidden">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Mobile Navigation Menu -->
+        <div class="mobile-nav">
+            <a href="index.html" class="mobile-nav-link">Home</a>
+            <a href="works.html" class="mobile-nav-link">Works</a>
+            <a href="index.html#contact" class="mobile-nav-link">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero -->
+        <section class="relative hero-pro overflow-hidden pt-24 md:pt-28 pb-16 md:pb-20">
+            <div class="hero-bg" aria-hidden="true">
+                <video class="hero-video" autoplay muted loop playsinline poster="../portfolio/images/hero1.avif" onerror="this.style.display='none'">
+                    <source src="../portfolio/images/hero.mp4" type="video/mp4">
+                </video>
+                <div class="hero-bg-gradient"></div>
+                <svg class="hero-lines" width="1200" height="600" viewBox="0 0 1200 600" fill="none">
+                    <path d="M0 200 C 300 100, 600 300, 900 200" stroke="#C5A572" stroke-width="1"/>
+                    <path d="M0 260 C 300 160, 600 360, 900 260" stroke="#C5A572" stroke-width="1"/>
+                    <path d="M0 320 C 300 220, 600 420, 900 320" stroke="#C5A572" stroke-width="1"/>
+                </svg>
+            </div>
+
+            <div class="container mx-auto px-4 relative z-10">
+                <div class="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+                    <div class="max-w-xl md:max-w-2xl text-center">
+                        <h1 class="font-display font-bold mb-4 leading-tight">
+                            <span class="block text-lg sm:text-xl md:text-3xl lg:text-4xl tracking-wide headline-line accent">素直さと熱量で、<br>
+                                期待を超える成果を。</span>
+                            <span class="block text-sm sm:text-base md:text-lg lg:text-xl text-gray-700 mt-2 headline-line">まだ学びの途中ですが、幅広い興味と挑戦心を<br>原動力に、毎日積み上げています。</span>
+                        </h1>
+                        <p class="text-gray-700 mb-6 leading-relaxed lead-block">
+                            小さな改善を重ねながら成長し、成果で応え、「また任せたい」と<br>思っていただける存在を全力で目指します。
+                        </p>
+                        <div class="flex gap-3 justify-center">
+                            <a class="btn btn-primary" href="#contact">お問い合わせ</a>
+                            <a class="btn btn-ghost" href="works.html">作品を見る</a>
+                        </div>
+                    </div>
+                    <div class="relative text-center md:text-right">
+                        <div class="portrait-wrap" data-tilt>
+                            <span class="photo-frame"></span>
+                            <img src="../portfolio/images/myphoto.JPG" alt="Omizu Hinaki プロフィール写真" width="360" height="360" loading="lazy" decoding="async" class="portrait-img" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIwIiBoZWlnaHQ9IjMyMCIgdmlld0JveD0iMCAwIDMyMCAzMjAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxjaXJjbGUgY3g9IjE2MCIgY3k9IjE2MCIgcj0iMTYwIiBmaWxsPSIjRjNGNEY2Ii8+CjxwYXRoIGQ9Ik0xMTAuNSAyMzRIMjA5LjVDMTk1IDIwNCAxNzUgMTg2IDE2MCAxODZDMTA4IDE4NiA4NiAyMDQgMTA5LjUgMjM0WiIgZmlsbD0iIzk5OTk5OSIvPgo8L3N2Zz4='">
+                            <div class="portrait-shine" aria-hidden="true"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Qualifications Section -->
+        <section class="py-16 bg-stone-50" aria-labelledby="qualifications-title">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-10">
+                    <h2 id="qualifications-title" class="section-title gsap-fade-up">資格・実績</h2>
+                    <p class="section-subtitle gsap-fade-up">技術に加えて、経営視点と教育経験を掛け合わせて価値提供します。</p>
+                </div>
+
+                <div class="qualifications-grid">
+                    <!-- 中小企業診断士（一次・科目合格） -->
+                    <article class="qualification-card gsap-fade-up">
+                        <div class="qualification-card__header">
+                            <span class="qualification-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                                    <path d="M12 3L1 8l11 5 9-4.09V17h2V8L12 3zm-1 14.09L3.97 13 2 13.91 11 18l9-4.09L18.03 13 11 17.09z" />
+                                </svg>
+                            </span>
+                            <h3 class="qualification-title">中小企業診断士（一次試験 科目合格）</h3>
+                        </div>
+                        <ul class="qualification-meta">
+                            <li><strong>取得年</strong>：2025</li>
+                            <li><strong>科目合格</strong>：経営法務／運営管理／経済学／中小企業政策</li>
+                            <li><strong>ステータス</strong>：一次（科目）合格、継続学習中</li>
+                        </ul>
+                        <div class="qualification-tags">
+                            <span class="qualification-tag">経営戦略</span>
+                            <span class="qualification-tag">財務分析</span>
+                            <span class="qualification-tag">オペレーション</span>
+                        </div>
+                        <p class="qualification-note">経営知識を土台に、効率化や生産性向上につながるアプリ開発を目指しています。</p>
+                    </article>
+
+                    <!-- 基本情報技術者 -->
+                    <article class="qualification-card gsap-fade-up" style="animation-delay: 0.1s;">
+                        <div class="qualification-card__header">
+                            <span class="qualification-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                                    <path d="M12 2l7 3v6c0 5-3.5 9.74-7 11-3.5-1.26-7-6-7-11V5l7-3z" />
+                                </svg>
+                            </span>
+                            <h3 class="qualification-title">基本情報技術者試験</h3>
+                        </div>
+                        <ul class="qualification-meta">
+                            <li><strong>範囲</strong>：アルゴリズム／データ構造／ネットワーク／セキュリティ ほか</li>
+                            <li></li>
+                            <li><strong>ステータス</strong>：合格（2025年）／応用情報を学習継続中</li>
+                        </ul>
+                        <br>
+                        <div class="qualification-tags">
+                            <span class="qualification-tag">アルゴリズム</span>
+                            <span class="qualification-tag">ネットワーク</span>
+                            <span class="qualification-tag">セキュリティ</span>
+                        </div>
+                        <p class="qualification-note">基礎を押さえたうえで、応用情報を学びながら幅広い分野に挑戦しています。</p>
+                    </article>
+
+                    <!-- ITエンジニア（実務） -->
+                    <article class="qualification-card gsap-fade-up" style="animation-delay: 0.2s;">
+                        <div class="qualification-card__header">
+                            <span class="qualification-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                                    <path d="M8.59 16.59L3 11l5.59-5.59L10 6.83 5.83 11 10 15.17l-1.41 1.42zM15.41 7.41L21 13l-5.59 5.59L14 17.17 18.17 13 14 8.83l1.41-1.42z" />
+                                </svg>
+                            </span>
+                            <h3 class="qualification-title">ITエンジニア（実務）</h3>
+                        </div>
+                        <ul class="qualification-meta">
+                            <li><strong>主領域</strong>：Web開発／フロントエンド／UI設計</li>
+                            <li><strong>知識基盤</strong>：<br>HTML／CSS／JavaScript／Java／PHP／UI/UX／AI活用</li>
+                            <li><strong>強み</strong>：要件定義〜実装・運用まで一気通貫</li>
+                        </ul>
+                        <div class="qualification-tags">
+                            <span class="qualification-tag">frontend</span>
+                            <span class="qualification-tag">backend</span>
+                            <span class="qualification-tag">SQL</span>
+                            <span class="qualification-tag">AI駆動開発</span>
+                        </div>
+                        <p class="qualification-note">経験を積みながら、より高い付加価値を生み出すエンジニアを目指しています。</p>
+                    </article>
+
+                    <!-- 講師業（教育） -->
+                    <article class="qualification-card gsap-fade-up" style="animation-delay: 0.3s;">
+                        <div class="qualification-card__header">
+                            <span class="qualification-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                                    <path d="M12 3l9 4-9 4L3 7l9-4zm0 6l9 4-9 4-9-4 9-4zm0 6l9 4-9 4-9-4 9-4z" />
+                                </svg>
+                            </span>
+                            <h3 class="qualification-title">講師業（教育）</h3>
+                        </div>
+                        <ul class="qualification-meta">
+                            <li><strong>経歴</strong>：塾講師4年／IT講師2年目（計 講師歴6年目）</li>
+                            <li><strong>免許</strong>：中高 国語 教員免許/日本語教員免許</li>
+                            <br>
+                            <li><strong>モットー</strong>：共に学び、共に成長する</li>
+                        </ul>
+                        <div class="qualification-tags">
+                            <span class="qualification-tag">教育設計</span>
+                            <span class="qualification-tag">伴走支援</span>
+                            <span class="qualification-tag">つながりのある講義</span>
+                        </div>
+                        <p class="qualification-note">学びを実務につなげる講義を心がけ、受講者と共に成長しています。</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <!-- Skills -->
+        <section id="skills" class="py-12 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <div class="max-w-6xl mx-auto">
+                    <div class="text-center mb-10">
+                        <h2 class="text-3xl font-display font-bold mb-3 heading-hover">Technical Skills</h2>
+                        <div class="w-20 h-1 bg-gold mx-auto"></div>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <!-- Frontend -->
+                        <div class="skill-card bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                            <h3 class="text-2xl font-display font-semibold mb-4 text-gold">🎨 Frontend</h3>
+                            <div class="space-y-3">
+                                <div class="skill-item">
+                                    <div class="flex items-center space-x-2">
+                                        <svg class="w-6 h-6 text-gold" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm-1.5 11.5l-3-3 1.5-1.5 1.5 1.5 4.5-4.5 1.5 1.5-6 6z"/></svg>
+                                        <span class="font-medium text-lg">HTML5</span>
+                                    </div>
+                                    <p class="text-gray-600 text-sm mt-1">セマンティック / ARIA / アクセシブルUI</p>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="flex items-center space-x-2">
+                                        <svg class="w-6 h-6 text-gold" fill="currentColor" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6zm0 5h18v2H3v-2zm0 5h18v2H3v-2z"/></svg>
+                                        <span class="font-medium text-lg">CSS3</span>
+                                    </div>
+                                    <p class="text-gray-600 text-sm mt-1">Flex / Grid / アニメーション</p>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="flex items-center space-x-2">
+                                        <svg class="w-6 h-6 text-gold" fill="currentColor" viewBox="0 0 24 24"><path d="M4 4h16v4H4V4zm0 6h16v10H4V10zm3 2v6h10v-6H7z"/></svg>
+                                        <span class="font-medium text-lg">JavaScript</span>
+                                    </div>
+                                    <p class="text-gray-600 text-sm mt-1">ES6+ / DOM操作 / Fetch API</p>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="flex items-center space-x-2">
+                                        <svg class="w-6 h-6 text-gold" fill="currentColor" viewBox="0 0 24 24"><path d="M4 4h16v16H4V4zm3 3v10h10V7H7z"/></svg>
+                                        <span class="font-medium text-lg">Bootstrap</span>
+                                    </div>
+                                    <p class="text-gray-600 text-sm mt-1">ユーティリティ / コンポーネント活用</p>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="flex items-center space-x-2">
+                                        <svg class="w-6 h-6 text-gold" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l4 8h8l-6.5 5.2L19 23l-7-4-7 4 1.5-7.8L0 10h8l4-8z"/></svg>
+                                        <span class="font-medium text-lg">React（学習中）</span>
+                                    </div>
+                                    <p class="text-gray-600 text-sm mt-1">Hooks / State 基礎</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Backend -->
+                        <div class="skill-card bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                            <h3 class="text-2xl font-display font-semibold mb-4 text-gold">⚙ Backend</h3>
+                            <div class="space-y-3">
+                                <div class="skill-item">
+                                    <div class="flex items-center space-x-2">
+                                        <svg class="w-6 h-6 text-gold" fill="currentColor" viewBox="0 0 24 24"><path d="M3 4h18v16H3V4zm3 3v10h12V7H6z"/></svg>
+                                        <span class="font-medium text-lg">Java</span>
+                                    </div>
+                                    <p class="text-gray-600 text-sm mt-1">MVC実装 / OOP / 基礎API</p>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="flex items-center space-x-2">
+                                        <svg class="w-6 h-6 text-gold" fill="currentColor" viewBox="0 0 24 24"><path d="M4 6h16v12H4V6zm2 2v8h12V8H6z"/></svg>
+                                        <span class="font-medium text-lg">SQL</span>
+                                    </div>
+                                    <p class="text-gray-600 text-sm mt-1">SQLite / 正規化 / インデックス基礎</p>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="flex items-center space-x-2">
+                                        <svg class="w-6 h-6 text-gold" fill="currentColor" viewBox="0 0 24 24"><path d="M5 4h14v4H5V4zm0 6h14v10H5V10zm2 2v6h10v-6H7z"/></svg>
+                                        <span class="font-medium text-lg">PHP</span>
+                                    </div>
+                                    <p class="text-gray-600 text-sm mt-1">フォーム処理 / メール送信 / DB連携</p>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="flex items-center space-x-2">
+                                        <svg class="w-6 h-6 text-gold" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.14 2 5 5.14 5 9c0 3.86 7 13 7 13s7-9.14 7-13c0-3.86-3.14-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"/></svg>
+                                    <span class="font-medium text-lg">Python（学習中）</span>
+                                    </div>
+                                    <p class="text-gray-600 text-sm mt-1">自動化 / データ処理 基礎</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tools & Others -->
+                        <div class="skill-card bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                            <h3 class="text-2xl font-display font-semibold mb-4 text-gold">🛠 Tools & Others</h3>
+                            <div class="space-y-3">
+                                <div class="skill-item">
+                                    <div class="flex items-center space-x-2">
+                                        <svg class="w-6 h-6 text-gold" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495 .99 .105-.78 .42-1.305 .765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305 .465-2.385 1.23-3.225-.12-.3-.54-1.53 .12-3.18 0 0 1.005-.315 3.3 1.23 .96-.27 1.98-.405 3-.405s2.04 .135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23 .66 1.65 .24 2.88 .12 3.18 .765 .84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925 .435 .375 .81 1.095 .81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315 .225 .69 .825 .57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                                        <span class="font-medium text-lg">Git</span>
+                                    </div>
+                                    <p class="text-gray-600 text-sm mt-1">GitHub Flow / コードレビュー</p>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="flex items-center space-x-2">
+                                        <svg class="w-6 h-6 text-gold" fill="currentColor" viewBox="0 0 24 24"><path d="M6 4h12v2H6V4zm0 14h12v2H6v-2zM4 7h16v10H4V7zm-2 3h2v4H2v-4zm18 0h2v4h-2v-4z"/></svg>
+                                        <span class="font-medium text-lg">AI駆動開発</span>
+                                    </div>
+                                    <p class="text-gray-600 text-sm mt-1">Cursor / Claud / ChatGPT 活用</p>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="flex items-center space-x-2">
+                                        <svg class="w-6 h-6 text-gold" fill="currentColor" viewBox="0 0 24 24"><path d="M12 3l9 4-9 4L3 7l9-4zm0 6l9 4-9 4-9-4 9-4zm0 6l9 4-9 4-9-4 9-4z"/></svg>
+                                        <span class="font-medium text-lg">講師業（教育）</span>
+                                    </div>
+                                    <p class="text-gray-600 text-sm mt-1">PHP/JS/HTML/CSS/Bootstrap を指導</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Works (3 items) -->
+        <!-- Featured Works Section -->
+        <section class="py-20 featured-works">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="section-title gsap-fade-up">Works</h2>
+                    <p class="section-subtitle gsap-fade-up">最近の取り組みと制作の一部です</p>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                    <!-- 作品カード 1 -->
+                    <div class="card gsap-fade-up">
+                        <img src="../portfolio/images/hero1.avif" alt="コーポレートサイト制作" class="card-image"
+                            onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDQwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMjAwIiBmaWxsPSIjRjNGNEY2Ii8+CjxwYXRoIGQ9Ik0xODAuNSAxMDAuNUMxOTMuMjM5IDEwMC41IDIwMyA5MC43MzkgMjAzIDc4QzIwMyA2NS4yNjEgMTkzLjIzOSA1NS41IDE4MC41IDU1LjVDMTY3Ljc2MSA1NS41IDE1OCA2NS4yNjEgMTU4IDc4QzE1OCA5MC43MzkgMTY3Ljc2MSAxMDAuNSAxODAuNSAxMDAuNVoiIGZpbGw9IiM5Q0EzQUYiLz4KPHBhdGggZD0iTTEzMCAxMzZMMTYwIDkyTDE5MCAxMTZMMjEwIDg4TDI1NiAxNDRIMTMwVjEzNloiIGZpbGw9IiM5Q0EzQUYiLz4KPC9zdmc+'">
+                        <div class="card-content">
+                            <h3 class="card-title">コーポレートサイト制作</h3>
+                            <p class="card-description">
+                                モダンなデザインと直感的なUIを重視したコーポレートサイト
+                            </p>
+                            <br>
+                            <div class="flex justify-between items-center">
+                                <span class="card-tag-champagne">Web Development</span>
+                                <a href="works.html" class="btn-champagne">
+                                    詳細 →
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 作品カード 2 -->
+                    <div class="card gsap-fade-up" style="animation-delay: 0.2s;">
+                        <img src="../portfolio/images/hero2.avif" alt="ブランドロゴデザイン" class="card-image"
+                            onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDQwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMjAwIiBmaWxsPSIjRjNGNEY2Ii8+CjxyZWN0IHg9IjIwMCIgY3k9IjEwMCIgcj0iNDAiIHN0cm9rZT0iIzlDQTNBRiIgc3Ryb2tlLXdpZHRoPSI0IiBmaWxsPSJub25lIi8+CjxwYXRoIGQ9Ik0xODAgMTAwTDIwMCA4MEwyMjAgMTAwTDIwMCAxMjBMMTgwIDEwMFoiIGZpbGw9IiM5Q0EzQUYiLz4KPC9zdmc+'">
+                        <div class="card-content">
+                            <h3 class="card-title">ブランドロゴデザイン</h3>
+                            <p class="card-description">
+                                シンプルで印象的なロゴデザイン
+                                <br>　
+                            </p>
+                            <div class="flex justify-between items-center">
+                                <span class="card-tag-champagne">Design</span>
+                                <a href="works.html" class="btn-champagne">
+                                    詳細 →
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 作品カード 3 -->
+                    <div class="card gsap-fade-up" style="animation-delay: 0.4s;">
+                        <img src="../portfolio/images/hero3.avif" alt="ECサイト開発" class="card-image"
+                            onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDQwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMjAwIiBmaWxsPSIjRjNGNEY2Ii8+CjxyZWN0IHg9IjE1MCIgeT0iNzAiIHdpZHRoPSIxMDAiIGhlaWdodD0iNjAiIHJ4PSI4IiBmaWxsPSIjOUNBM0FGIi8+CjxjaXJjbGUgY3g9IjE3NSIgY3k9IjE1MCIgcj0iOCIgZmlsbD0iIzlDQTNBRiIvPgo8Y2lyY2xlIGN4PSIyMjUiIGN5PSIxNTAiIHI9IjgiIGZpbGw9IiM5Q0EzQUYiLz4KPC9zdmc+'">
+                        <div class="card-content">
+                            <h3 class="card-title">ECサイト開発</h3>
+                            <p class="card-description">
+                                ユーザビリティを重視したECサイト
+                                <br>　
+                            </p>
+                            <div class="flex justify-between items-center">
+                                <span class="card-tag-champagne">E-commerce</span>
+                                <a href="works.html" class="btn-champagne">
+                                    詳細 →
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- すべての作品を見るボタン -->
+                <div class="text-center">
+                    <a href="works.html" class="btn-champagne gsap-fade-up">
+                        すべての作品を見る
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="py-12 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <h2 class="section-title text-center">お問い合わせ</h2>
+                <p class="text-center text-gray-700 max-w-2xl mx-auto mb-6">小さな相談からでもお気軽に。要件が固まっていなくても、目的やイメージを一緒に言語化します。</p>
+                <div class="max-w-4xl mx-auto mb-6">
+                    <div class="p-5 md:p-6 rounded-lg bg-white shadow-sm border border-gray-200 text-center contact-card">
+                        <h3 class="font-semibold mb-3">💡 対応可能なこと</h3>
+                        <div class="text-sm text-gray-700 space-y-3 max-w-2xl mx-auto">
+                            <div>
+                                <p class="font-medium">Webサイト / LP / ポートフォリオ制作</p>
+                                <p>HTML / CSS / JavaScript を用いた実装が可能で、個人・学習用途の制作経験があります。</p>
+                            </div>
+                            <div>
+                                <p class="font-medium">UI改善・アニメーション導入</p>
+                                <p>CSSアニメーションやライブラリを活用し、見やすさ・操作感を高める改善を行います。</p>
+                            </div>
+                            <div>
+                                <p class="font-medium">フォーム実装 / 基本的な自動化</p>
+                                <p>入力フォーム、バリデーション、メール送信処理、簡単なデータ処理の実装に対応可能です。</p>
+                            </div>
+                            <div>
+                                <p class="font-medium">要件整理・提案（壁打ち）</p>
+                                <p>仕様が曖昧な段階でもヒアリングを重ね、最適な方向性を一緒に考えます。</p>
+                            </div>
+                            <div>
+                                <p class="font-medium">進捗共有（週次 / 都度）</p>
+                                <p>学習中でも報連相を意識し、透明性のある進め方を心がけます。</p>
+                            </div>
+                            <div>
+                                <p class="font-medium">柔軟な修正対応</p>
+                                <p>指摘や改善要望に素直に対応し、納得感のある成果を目指します。</p>
+                            </div>
+                            <div>
+                                <p class="font-medium">教育 / サポート</p>
+                                <p>基礎的な HTML / CSS / JavaScript / Bootstrap の指導・サポート経験があります。</p>
+                            </div>
+                        </div>
+                        <hr class="my-4 border-gray-200">
+                        <h3 class="font-semibold mb-2">🌱 未経験分野について</h3>
+                        <p class="text-sm text-gray-700 leading-relaxed max-w-2xl mx-auto">学習を兼ねつつ柔軟に取り組みます。その際は「成長の機会」として、通常より抑えたコストでご相談いただけます。</p>
+                    </div>
+                </div>
+                <form class="form mx-auto" action="https://formsubmit.co/704f470e135738f3b15945063cb2d6df" method="POST">
+                    <input type="hidden" name="_subject" value="[Portfolio-Compact] お問い合わせ">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" id="form-next" value="">
+                    <input type="hidden" name="_replyto" id="form-replyto" value="">
+                    <input type="hidden" name="_autoresponse" value="お問い合わせありがとうございます。折り返しご連絡いたします。">
+
+                    <div class="form-row">
+                        <label for="name">お名前</label>
+                        <input id="name" name="name" type="text" placeholder="山田 太郎" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="email">メールアドレス</label>
+                        <input id="email" name="email" type="email" placeholder="example@mail.com" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="message">ご用件</label>
+                        <textarea id="message" name="message" rows="5" placeholder="ご相談内容を簡潔にご記入ください" required></textarea>
+                    </div>
+                    <div class="form-actions">
+                        <button class="btn btn-primary" type="submit">送信する</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div class="text-center md:text-left">
+                    <h3 class="text-xl font-display font-bold mb-4">Omizu Hinaki</h3>
+                    <p class="footer-text">Web Developer & Designer<br>Creating Digital Experiences</p>
+                </div>
+                <div class="text-center">
+                    <h4 class="font-semibold mb-4">Navigation</h4>
+                    <div class="space-y-2">
+                        <a href="index.html" class="footer-text hover:text-champagne transition-colors block">Home</a>
+                        <a href="works.html" class="footer-text hover:text-champagne transition-colors block">Works</a>
+                        <a href="index.html#contact" class="footer-text hover:text-champagne transition-colors block">Contact</a>
+                    </div>
+                </div>
+                <div class="text-center md:text-right">
+                    <h4 class="font-semibold mb-4">Follow Me</h4>
+                    <div class="social-links justify-center md:justify-end">
+                        <a href="https://github.com/Hinaki-07" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                        </a>
+                        <a href="https://x.com/OmizuHinaki" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Twitter">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
+                        </a>
+                        <a href="https://instagram.com/omizuhinaki_44/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M7 2C4.243 2 2 4.243 2 7v10c0 2.757 2.243 5 5 5h10c2.757 0 5-2.243 5-5V7c0-2.757-2.243-5-5-5H7zm0 2h10c1.654 0 3 1.346 3 3v10c0 1.654-1.346 3-3 3H7c-1.654 0-3-1.346-3-3V7c0-1.654 1.346-3 3-3zm5 3.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zm0 2a3.5 3.5 0 110 7 3.5 3.5 0 010-7zM18.5 5a1.5 1.5 0 100 3 1.5 1.5 0 000-3z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-copy">
+                    <p>&copy; 2025 Omizu Hinaki. All rights reserved. </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
+
+
